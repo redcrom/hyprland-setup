@@ -1,0 +1,48 @@
+{
+    "layer": "top",
+    "position": "top",
+    "height": 30,
+    "spacing": 10,
+    "modules-left": ["hyprland/workspaces"],
+    "modules-center": ["clock"],
+    "modules-right": ["pulseaudio", "custom/updates", "tray"],
+
+    "hyprland/workspaces": {
+        "format": "{icon}",
+        "format-icons": {
+            "active": "●",
+            "default": "○"
+        },
+        "persistent-workspaces": {
+            "*": 10
+        },
+        "disable-scroll": true,
+        "all-outputs": true,
+        "active-only": false
+    },
+
+    "clock": {
+        "format": "{:%I:%M %p}",
+        "format-alt": "{:%Y-%m-%d}",
+        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
+    },
+
+    "pulseaudio": {
+        "format": "{volume}% 🔊",
+        "format-muted": "🔇 Muted",
+        "on-click": "pavucontrol"
+    },
+
+    "custom/updates": {
+        "format": "📦 {}",
+        "interval": 300,
+        "exec": "checkupdates | wc -l",
+        "exec-if": "exit 0",
+        "signal": 7
+    },
+
+    "tray": {
+        "icon-size": 21,
+        "spacing": 10
+    }
+}

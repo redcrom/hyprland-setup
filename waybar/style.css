@@ -1,0 +1,130 @@
+* {
+    font-family: "Fira Sans Semibold", "Font Awesome 6 Free", FontAwesome, Roboto, Helvetica, Arial, sans-serif;
+}
+
+window#waybar {
+    background-color: #282A36;
+    color: #44475a;
+    font-size: 14px;
+    border-radius: 0px;
+    margin: 0px;
+    padding: 0;
+}
+
+/* Left-most: Arch icon */
+#custom-appmenu {
+  font-size: 4;
+  background-image: url('/usr/share/icons/cachyos.svg');
+  background-color: #44475a;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding: 0px 12px;
+    
+}
+#workspaces button.empty {
+  opacity: 0.5;
+}
+/* Right-most: Clock */
+#clock {
+    font-size: 14px;
+    background-color: #44475a;
+    color: #F8F8F2;
+    border-radius: 0px;
+    padding: 0px 8px;
+}
+
+/* Active window title */
+#window {
+    font-size: 14px;
+    font-weight: 800;
+    color: #F8F8F2;
+    border-radius: 0px;
+    padding: 4px 12px;
+    background-color: #44475a;
+}
+
+/* Workspace container */
+#workspaces {
+    background: #282A36;
+    font-weight: bold;
+    border-radius: 0px;
+    font-size: 8px;
+    color: #F8F8F2;
+}
+
+/* Individual workspace buttons */
+#workspaces button {
+    border-radius: 0px;
+    font-size: 8px;
+    /*border: 1px solid #F8F8F2;*/
+}
+
+#workspaces button.active {
+    border-radius: 0px;
+    color: #282A36;
+    background: #bd93f9;
+}
+
+#workspaces button:hover {
+    border-radius: 0px;
+    background: #50fa7b;
+    border-width: 0px;
+}
+
+/* Power/exit button */
+#custom-exit {
+    background-color: #bd93f9;
+    font-size: 14px;
+    font-weight: 800;
+    color: #282A36;
+    padding: 0px 6px;
+    margin: 2px 2px 2px 0;
+}
+
+/* Tooltips */
+tooltip {
+    border-radius: 12px;
+    background-color: #282A36;
+    color: #F8F8F2;
+    padding: 4px 8px;
+}
+
+/* Taskbar */
+#taskbar {
+    background-color: #44475a;
+    margin: 0px;
+    border-radius: 0px;
+    font-weight: normal;
+}
+
+/* All system info modules */
+#backlight,
+#pulseaudio,
+#network,
+#bluetooth,
+#battery,
+#tray,
+#custom-updates,
+#custom-notification {
+    background-color: #44475a;
+    font-size: 14px;
+    font-weight: 800;
+    color: #F8F8F2;
+    border-radius: 0px;
+    padding: 4px 10px;
+}
+
+/* Battery critical warning */
+#battery.critical:not(.charging) {
+    background-color: #FF5555;
+    color: #F8F8F2;
+    animation: blink 0.5s linear infinite alternate;
+}
+
+@keyframes blink {
+    to {
+        background-color: #282A36;
+        color: #F8F8F2;
+    }
+}
