@@ -1,0 +1,78 @@
+* {
+    border: none;
+    border-radius: 0px;
+    font-family: "Font Awesome 6 Free", sans-serif;
+    font-size: 13px;
+    min-height: 0;
+}
+
+window#waybar {
+    background: #2e3440; /* Dark background */
+    color: #eceff4; /* Light text */
+}
+
+tooltip {
+    background: #3b4252; /* Darker tooltip background */
+    border-radius: 5px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #4c566a; /* Border for tooltip */
+}
+
+tooltip label {
+    color: #eceff4; /* Light text for tooltip */
+}
+
+#workspaces button {
+    padding: 0 5px;
+    background: transparent;
+    color: #d8dee9; /* Workspace button color */
+}
+
+#workspaces button.active {
+    color: #88c0d0; /* Active workspace color */
+}
+
+#workspaces button.urgent {
+    color: #bf616a; /* Urgent workspace color */
+}
+
+#workspaces button:hover {
+    background: #4c566a; /* Hover background for workspaces */
+    color: #eceff4; /* Hover text color */
+}
+
+#clock {
+    background: #3b4252; /* Clock background */
+    padding: 0 10px;
+    margin: 0 5px;
+    color: #eceff4; /* Clock text color */
+}
+
+#pulseaudio {
+    background: #434c5e; /* Pulseaudio background */
+    padding: 0 10px;
+    margin: 0 5px;
+    color: #eceff4; /* Pulseaudio text color */
+}
+
+#custom-arch-updates {
+    background: #5e81ac; /* Arch updates background */
+    padding: 0 10px;
+    margin: 0 5px;
+    color: #eceff4; /* Arch updates text color */
+}
+
+#tray {
+    background: #3b4252; /* Tray background */
+    padding: 0 10px;
+    margin: 0 5px;
+    color: #eceff4; /* Tray text color */
+}
+
+#hyprland-window {
+    background: #2e3440; /* Window title background */
+    padding: 0 10px;
+    margin: 0 5px;
+    color: #eceff4; /* Window title text color */
+}
