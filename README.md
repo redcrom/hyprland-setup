@@ -9,4 +9,7 @@ nautilus
 alacritty
 swww 
 grim and slurp
-
+fastfetch
+Helium
+LM-Studio
+Proton vpn
